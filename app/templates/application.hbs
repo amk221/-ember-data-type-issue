@@ -1,3 +1,18 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<h3>Activities</h3>
+{{#each model.activities as |activity|}}
+    {{activity.name}} - {{activity.type}}<br>
+{{/each}}
+
+<h3>Foos</h3>
+{{#each model.foos as |foo|}}
+    {{foo.name}}<br>
+{{/each}}
+
+<h3>Bars</h3>
+{{#each model.bars as |bar|}}
+    {{bar.name}}<br>
+{{/each}}
+
+{{!outlet}}

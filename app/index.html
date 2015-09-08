@@ -18,6 +18,55 @@
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mockjax/1.6.2/jquery.mockjax.js"></script>
+    <script>
+    jQuery.mockjax({
+        url: '/activities',
+        responseText: {
+            activities: [{
+                id: 1,
+                name: 'Activity 1',
+                type: 'foo'
+            }, {
+                id: 2,
+                name: 'Activity 2',
+                type: 'bar'
+            }, {
+                id: 3,
+                name: 'Activity 3',
+                type: 'this is ok'
+            }]
+        }
+    })
+
+    jQuery.mockjax({
+        url: '/foos',
+        responseText: {
+            foos: [{
+                id: 1,
+                name: 'Foo 1'
+            }, {
+                id: 2,
+                name: 'Foo 2'
+            }]
+        }
+    })
+
+    jQuery.mockjax({
+        url: '/bars',
+        responseText: {
+            bars: [{
+                id: 1,
+                name: 'Bar 1'
+            }, {
+                id: 2,
+                name: 'Bar 2'
+            }]
+        }
+    })
+    </script>
+
     <script src="assets/ember-data-type-issue.js"></script>
 
     {{content-for 'body-footer'}}

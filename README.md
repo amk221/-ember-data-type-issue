@@ -1,53 +1,32 @@
 # Ember-data-type-issue
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo demos an issue with mber Data 2
 
-## Prerequisites
+See [app/index.html](app/index.html) for the mocked data
 
-You will need the following things properly installed on your computer.
+#### Description
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+3 Models:
 
-## Installation
+* Activity
+	* name: string
+	* type: string
+* Foo
+	* name: string
+* Bar
+	* name: string
+	
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+If an Activity model's `type` attribute happens to be the name of an existing model (e.g. 'foo') no activities will be found.
 
-## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+##### Notes
 
-### Code Generators
+* I've not specified any polymorphism
+* This worked before Ember Data 2 (i.e. 2.0.0-beta.2)
 
-Make use of the many generators for code, try `ember help generate` for more details
+<br>
+<hr>
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+<img src="screenshot.png">
 
