@@ -1,8 +1,9 @@
 # Ember-data-type-issue
 
-This repo demos an issue with mber Data 2
+This repo demos an issue with mber Data 2.
 
-See [app/index.html](app/index.html) for the mocked data
+See in a [fiddle](http://jsfiddle.net/amk221/aocdzyct/).
+
 
 #### Description
 
@@ -24,6 +25,7 @@ If an Activity model's `type` attribute happens to be the name of an existing mo
 
 * I've not specified any polymorphism
 * This worked before Ember Data 2 (i.e. 2.0.0-beta.2)
+* Mocked data is in [app/index.html](app/index.html)
 
 <br>
 <hr>
