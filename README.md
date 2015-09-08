@@ -1,6 +1,6 @@
 # Ember-data-type-issue
 
-This repo demos an issue with mber Data 2.
+This repo demos an issue with Ember Data 2.
 
 See in a [fiddle](http://jsfiddle.net/amk221/aocdzyct/).
 
